@@ -7,5 +7,8 @@
 ; Push
 ^+k:: Send git push
 
+; Pull
+^p:: Send git pull
+
 #If
 
