@@ -32,6 +32,8 @@ Return
 
 ; Switch open windows between monitors.
 CapsLock & s::
+while (GetKeyState("CapsLock"))
+	sleep, -1
 WinGet,Windows,List
 Loop,%Windows%
 {
@@ -43,8 +45,7 @@ Loop,%Windows%
         Send #+{Right}
     }
 }
-SetCapsLockState, Off
-return
+Return
 
 ; Run TINY TASK.
 CapsLock & t::Run TinyTask\TinyTaskPortable\TinyTaskPortable.exe
