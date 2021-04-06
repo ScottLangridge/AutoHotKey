@@ -35,9 +35,11 @@ CapsLock & s::
 while (GetKeyState("CapsLock"))
 	sleep, -1
 WinGet,Windows,List
-Loop,%Windows%
+i = %Windows%
+while (i > 0)
 {
-    this_id := Windows%A_Index%
+    i--
+    this_id := Windows%i%
     WinGet, WinState, MinMax, ahk_id %this_id%
     if (WinState > -1)
     {
