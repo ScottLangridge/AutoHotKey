@@ -15,7 +15,7 @@ return
 ;================================================================================================
 ; Hot keys with CapsLock modifier.  See https://autohotkey.com/docs/Hotkeys.htm#combo
 ;================================================================================================
-; GOOGLE the selected text.
+; "G"oogle the selected text.
 CapsLock & g::
     ClipSaved := % clipboardAll
     clipboard := ""
@@ -30,8 +30,8 @@ CapsLock & g::
     clipboard = % ClipSaved
 Return
 
-; Switch open windows between monitors.
-CapsLock & s::
+; Switch open windows between "M"onitors.
+CapsLock & m::
 while (GetKeyState("CapsLock"))
 	sleep, -1
 WinGet,Windows,List
@@ -49,5 +49,19 @@ while (i > 0)
 }
 Return
 
-; Run TINY TASK.
-CapsLock & t::Run ..\TinyTask\TinyTaskPortable\TinyTaskPortable.exe
+; Switch "O"utput device between speakers and headphones.
+CapsLock & o::
+	device := VA_GetDevice("playback")
+        deviceName := VA_GetDeviceName(device)
+        if (deviceName = "Speakers (Realtek High Definition Audio)")
+	{
+		Run ..\..\Utilities\NirCmd\nircmd setdefaultsounddevice "DELL U2417H - Left"
+	}
+	else 
+	{
+		Run ..\..\Utilities\NirCmd\nircmd setdefaultsounddevice "Speakers"
+	}
+Return
+
+; Run "T"inyTask.
+CapsLock & t::Run ..\..\Utilities\TinyTask\TinyTaskPortable\TinyTaskPortable.exe

@@ -5,6 +5,11 @@ SendMode Input              ; Recommended for new scripts due to its superior sp
 SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 
 ;================================================================================================
+; Libraries
+;================================================================================================
+#Include ..\..\Lib\VA.ahk
+
+;================================================================================================
 ; Imports
 ;================================================================================================
 #Include Private_Vars.ahk
@@ -12,7 +17,6 @@ SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 
 #Include CapsLock_Scripts.ahk
 #Include Git_Bash.ahk
-
 
 ;================================================================================================
 ; One Off Scripts
