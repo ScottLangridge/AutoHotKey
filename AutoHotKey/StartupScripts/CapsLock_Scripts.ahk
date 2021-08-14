@@ -65,3 +65,7 @@ Return
 
 ; Run "T"inyTask.
 CapsLock & t::Run ..\..\Utilities\TinyTask\TinyTaskPortable\TinyTaskPortable.exe
+
+
+; "P"rintscreen
+CapsLock & p::Send {PrintScreen}
