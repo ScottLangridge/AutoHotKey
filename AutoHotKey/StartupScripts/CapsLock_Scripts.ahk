@@ -55,7 +55,7 @@ CapsLock & o::
         deviceName := VA_GetDeviceName(device)
         if (deviceName = "Speakers (Realtek High Definition Audio)")
 	{
-		Run ..\..\Utilities\NirCmd\nircmd setdefaultsounddevice "DELL U2417H - Left"
+		Run ..\..\Utilities\NirCmd\nircmd setdefaultsounddevice "DELL U2417H - Right"
 	}
 	else 
 	{
