@@ -69,3 +69,11 @@ CapsLock & t::Run ..\..\Utilities\TinyTask\TinyTaskPortable\TinyTaskPortable.exe
 
 ; "P"rintscreen
 CapsLock & p::Send {PrintScreen}
+
+; Left/F for Home
+CapsLock & Left::Send {Home}
+CapsLock & F::Send {Home}
+
+; Right/J for End
+CapsLock & Right::Send {End}
+CapsLock & J::Send {End}
