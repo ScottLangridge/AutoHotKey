@@ -49,20 +49,6 @@ while (i > 0)
 }
 Return
 
-; Switch "O"utput device between speakers and headphones.
-CapsLock & o::
-	device := VA_GetDevice("playback")
-        deviceName := VA_GetDeviceName(device)
-        if (deviceName = "Speakers (Realtek High Definition Audio)")
-	{
-		Run ..\..\Utilities\NirCmd\nircmd setdefaultsounddevice "DELL U2417H - Right"
-	}
-	else 
-	{
-		Run ..\..\Utilities\NirCmd\nircmd setdefaultsounddevice "Speakers"
-	}
-Return
-
 ; Run "T"inyTask.
 CapsLock & t::Run ..\..\Utilities\TinyTask\TinyTaskPortable\TinyTaskPortable.exe
 
@@ -77,6 +63,3 @@ CapsLock & F::Send {Home}
 ; Right/J for End
 CapsLock & Right::Send {End}
 CapsLock & J::Send {End}
-
-; Run "W"indows Terminal
-CapsLock & W::Run, wt
