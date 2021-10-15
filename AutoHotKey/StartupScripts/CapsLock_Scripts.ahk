@@ -77,3 +77,6 @@ CapsLock & F::Send {Home}
 ; Right/J for End
 CapsLock & Right::Send {End}
 CapsLock & J::Send {End}
+
+; Run "W"indows Terminal
+CapsLock & W::Run, wt
