@@ -17,6 +17,7 @@ SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 
 #Include CapsLock_Scripts.ahk
 #Include Git_Bash.ahk
+#Include Slack.ahk
 
 ;================================================================================================
 ; One Off Scripts
