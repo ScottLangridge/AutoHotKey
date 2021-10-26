@@ -1,4 +1,4 @@
-﻿; Only in git bash
+﻿; Only in Slack
 #IfWinActive ahk_exe slack.exe
 
 ; yy to thumbs up
