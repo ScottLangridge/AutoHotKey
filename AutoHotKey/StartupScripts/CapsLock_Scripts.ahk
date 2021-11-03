@@ -63,3 +63,6 @@ CapsLock & F::Send {Home}
 ; Right/J for End
 CapsLock & Right::Send {End}
 CapsLock & J::Send {End}
+
+; "W"indows terminal
+CapsLock & w::Run wt.exe
