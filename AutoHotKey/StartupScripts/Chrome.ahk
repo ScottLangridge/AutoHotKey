@@ -13,4 +13,7 @@
 ::vpistable::https://vpi-stable.alphavpi.com/login
 ::bookroom::https://bruntwood.checkfront.co.uk/reserve/?inline=1&category_id=25&style=font-family%3A%20%22synthese%22%2Csans-serif&provider=droplet&ssl=1&src=https%3A%2F%2Fcollective.bruntwood.co.uk&1632215667848
 
+; Stop me from accidentally writing vpiss, which leads to some... interesting results
+::vpiss::Try again
+
 #If
