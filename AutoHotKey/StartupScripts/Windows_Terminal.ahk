@@ -7,4 +7,10 @@
 ; Sudo last
 +^s:: Send {up}{home}sudo {end}
 
+; Commit
+^k:: Send git commit -m "feat/fix/chore [WIP]:"{Ctrl Down}{left}{left}{left}{left}{Ctrl Up}
+
+; Push
+^+k:: Send git push
+
 #If
