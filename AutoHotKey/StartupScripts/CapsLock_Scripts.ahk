@@ -56,10 +56,16 @@ CapsLock & t::Run ..\..\Utilities\TinyTask\TinyTaskPortable\TinyTaskPortable.exe
 ; "P"rintscreen
 CapsLock & p::Send {PrintScreen}
 
-; Left/F for Home
+; Left/[ for Home
 CapsLock & Left::Send {Home}
-CapsLock & F::Send {Home}
+CapsLock & [::Send {Home}
 
-; Right/J for End
+; Right/] for End
 CapsLock & Right::Send {End}
-CapsLock & J::Send {End}
+CapsLock & ]::Send {End}
+
+; HJKL for arrow keys
+CapsLock & h::Send {Left}
+CapsLock & j::Send {Down}
+CapsLock & k::Send {Up}
+CapsLock & l::Send {Right}
