@@ -52,7 +52,6 @@ Return
 ; Run "T"inyTask.
 CapsLock & t::Run ..\..\Utilities\TinyTask\TinyTaskPortable\TinyTaskPortable.exe
 
-
 ; "P"rintscreen
 CapsLock & p::Send {PrintScreen}
 
@@ -65,11 +64,45 @@ CapsLock & Right::Send {End}
 CapsLock & ]::Send {End}
 
 ; HJKL for arrow keys
-CapsLock & h::Send {Left}
-CapsLock & j::Send {Down}
-CapsLock & k::Send {Up}
-CapsLock & l::Send {Right}
+CapsLock & h::
+If GetKeyState("Shift", "P")
+  Send +{Left}
+Else
+  Send {Left}
+return 
+
+CapsLock & j::
+If GetKeyState("Shift", "P")
+  Send +{Down}
+Else
+  Send {Down}
+return
+
+CapsLock & k::
+IF GetKeyState("Shift", "P")
+  Send +{Up}
+ELSE
+  Send {Up}
+return
+
+CapsLock & l::
+IF GetKeyState("Shift", "P")
+  Send +{Right}
+ELSE
+  Send {Right}
+return
 
 ; W and B for vim style word skipping
-CapsLock & b::Send ^{Left}
-CapsLock & w::Send ^{Right}
+CapsLock & b::
+IF GetKeyState("Shift", "P")
+  Send +^{Left}
+ELSE
+  Send ^{Left}
+return
+
+CapsLock & w::
+IF GetKeyState("Shift", "P")
+  Send +^{Right}
+ELSE
+  Send ^{Right}
+return
