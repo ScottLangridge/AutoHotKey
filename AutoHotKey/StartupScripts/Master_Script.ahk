@@ -18,6 +18,7 @@ SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 #Include CapsLock_Scripts.ahk
 #Include Chrome.ahk
 #Include Git_Bash.ahk
+#Include RubyMine.ahk
 #Include Slack.ahk
 #Include Windows_Terminal.ahk
 
