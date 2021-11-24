@@ -15,21 +15,6 @@ return
 ;================================================================================================
 ; Hot keys with CapsLock modifier.  See https://autohotkey.com/docs/Hotkeys.htm#combo
 ;================================================================================================
-; "G"oogle the selected text.
-CapsLock & g::
-    ClipSaved := % clipboardAll
-    clipboard := ""
-    Send, ^c
-    ClipWait 0
-    If ErrorLevel
-        {
-        MsgBox, No Text Selected!
-        Return
-        }
-    Run, http://www.google.com/search?q=%clipboard%
-    clipboard = % ClipSaved
-Return
-
 ; Switch open windows between "M"onitors.
 CapsLock & m::
 while (GetKeyState("CapsLock"))
@@ -64,8 +49,8 @@ CapsLock & [::Send {Home}
 CapsLock & Right::Send {End}
 CapsLock & ]::Send {End}
 
-; "W"indows terminal
-CapsLock & w::Run wt.exe
+; Windows terminal
+CapsLock & 1::Run wt.exe
 
 ; HJKL for arrow keys
 CapsLock & h::Send {Left}
