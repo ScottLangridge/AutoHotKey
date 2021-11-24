@@ -73,3 +73,7 @@ CapsLock & j::Send {Down}
 CapsLock & k::Send {Up}
 CapsLock & l::Send {Right}
 
+; W and B for vim style word skipping
+CapsLock & b::Send ^{Left}
+CapsLock & w::Send ^{Right}
+
