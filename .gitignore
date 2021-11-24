@@ -1,2 +1,3 @@
 Private_Vars.ahk
-*.ini
+Utilities/TinyTask/TinyTaskPortable/Data/settings/TinyTaskPortableSettings.ini
+Utilities/TinyTask/TinyTaskPortable/Data/tinytask.ini
