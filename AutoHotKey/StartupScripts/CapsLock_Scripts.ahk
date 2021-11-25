@@ -63,46 +63,72 @@ CapsLock & [::Send {Home}
 CapsLock & Right::Send {End}
 CapsLock & ]::Send {End}
 
+;================================================================================================
+;  Vim Mode.
+;================================================================================================
+VimMode := False
+
+; Caps J to enter vim mode
+CapsLock & j::VimMode := True
+
+#If %VimMode%
+; I to exit vim mode
+i::VimMode := False
+
 ; HJKL for arrow keys
-CapsLock & h::
-If GetKeyState("Shift", "P")
-  Send +{Left}
-Else
-  Send {Left}
-return 
-
-CapsLock & j::
-If GetKeyState("Shift", "P")
-  Send +{Down}
-Else
-  Send {Down}
-return
-
-CapsLock & k::
-IF GetKeyState("Shift", "P")
-  Send +{Up}
-ELSE
-  Send {Up}
-return
-
-CapsLock & l::
-IF GetKeyState("Shift", "P")
-  Send +{Right}
-ELSE
-  Send {Right}
-return
+h::Send {Left}
+j::Send {Down}
+k::Send {Up}
+l::Send {Right}
++h::Send +{Left}
++j::Send +{Down}
++k::Send +{Up}
++l::Send +{Right}
 
 ; W and B for vim style word skipping
-CapsLock & b::
-IF GetKeyState("Shift", "P")
-  Send +^{Left}
-ELSE
-  Send ^{Left}
+b::Send ^{Left}
+w::Send ^{Right}
++b::Send +^{Left}
++w::Send +^{Right}
+
+; O for start new line below current
+o::
+  Send {End}{Enter}
+  VimMode := False
+return
++o::
+  Send {Home}{Enter}{Up}
+  VimMode := False
 return
 
-CapsLock & w::
-IF GetKeyState("Shift", "P")
-  Send +^{Right}
-ELSE
-  Send ^{Right}
-return
+; ctrl d/w for scroll down/up
+^u::Send {WheelUp 5}
+^d::Send {WheelDown 5}
+
+; x for delete
+x::Send {Delete}
+
+; u for undo
+u::Send ^z
+
+; / for search
+/::Send ^f
+
+; Disable other keys
+a::
+c::
+d::
+e::
+f::
+g::
+m::
+n::
+p::
+q::
+r::
+s::
+t::
+v::
+y::
+z::
+#If
