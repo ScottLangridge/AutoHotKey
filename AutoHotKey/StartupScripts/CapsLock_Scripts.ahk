@@ -101,6 +101,13 @@ return
   SetIcon("..\assets\normal.png")
 return
 
+d::
+  KeyWait, d, U
+  KeyWait, d, D, T0.2
+  If (ErrorLevel = 0)
+    send, {BS 2}{Home}+{End}{Delete 2}
+return
+
 ; ctrl d/w for scroll down/up
 ^u::Send {PgUp}
 ^d::Send {PgDn}
@@ -117,7 +124,6 @@ u::Send ^z
 ; Disable other keys
 a::
 c::
-d::
 e::
 f::
 g::
