@@ -54,14 +54,24 @@ CapsLock & w::Run wt.exe
 ;================================================================================================
 ;  Vim Mode.
 ;================================================================================================
-VimMode := False
+
+SetIcon(icon_path) {
+  IfExist, %icon_path%
+  Menu, Tray, Icon, %icon_path%
+}
 
 ; Caps J to enter vim mode
-CapsLock & j::VimMode := True
+CapsLock & j::
+  VimMode := True
+  SetIcon("..\assets\normal.png")
+return
 
 #If %VimMode%
 ; I to exit vim mode
-i::VimMode := False
+i::
+  VimMode := False
+  SetIcon("..\assets\insert.png")
+return
 
 ; HJKL for arrow keys
 h::Send {Left}
@@ -83,15 +93,17 @@ w::Send ^{Right}
 o::
   Send {End}{Enter}
   VimMode := False
+  SetIcon("..\assets\normal.png")
 return
 +o::
   Send {Home}{Enter}{Up}
   VimMode := False
+  SetIcon("..\assets\normal.png")
 return
 
 ; ctrl d/w for scroll down/up
-^u::Send {WheelUp 5}
-^d::Send {WheelDown 5}
+^u::Send {PgUp}
+^d::Send {PgDn}
 
 ; x for delete
 x::Send {Delete}
@@ -119,5 +131,6 @@ t::
 v::
 y::
 z::
+Space::
 #If
 
