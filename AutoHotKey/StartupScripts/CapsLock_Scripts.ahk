@@ -113,7 +113,7 @@ return
   SetIcon("..\assets\normal.png")
 return
 
-d::
+$d::
   KeyWait, d, U
   KeyWait, d, D, T0.2
   If (ErrorLevel = 0)
