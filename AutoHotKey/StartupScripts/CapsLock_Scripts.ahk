@@ -117,7 +117,7 @@ d::
   KeyWait, d, U
   KeyWait, d, D, T0.2
   If (ErrorLevel = 0)
-    send, {BS 2}{Home}+{End}{Delete 2}
+    Send {Home}+{End}{Delete 2}
 return
 
 ; ctrl d/w for scroll down/up
