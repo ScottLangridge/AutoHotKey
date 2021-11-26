@@ -108,7 +108,7 @@ o::
   SetIcon("..\assets\normal.png")
 return
 +o::
-  Send {Home}{Enter}{Up}
+  Send {End}{Home}{Enter}{Up}
   VimMode := False
   SetIcon("..\assets\normal.png")
 return
