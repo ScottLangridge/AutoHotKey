@@ -85,6 +85,12 @@ i::
   SetIcon("..\assets\insert.png")
 return
 
+; A to append to the end of the line
++a::
+  VimMode := False
+  SetIcon("..\assets\insert.png")
+  Send {End}{Right}
+
 ; HJKL for arrow keys
 h::Send {Left}
 j::Send {Down}
