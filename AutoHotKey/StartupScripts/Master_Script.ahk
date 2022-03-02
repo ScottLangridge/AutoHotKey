@@ -20,7 +20,6 @@ SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 #Include Git_Bash.ahk
 #Include RubyMine.ahk
 #Include Slack.ahk
-#Include Windows_Terminal.ahk
 
 ;================================================================================================
 ; One Off Scripts
