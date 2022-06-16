@@ -48,8 +48,14 @@ CapsLock & [::Send {Home}
 CapsLock & Right::Send {End}
 CapsLock & ]::Send {End}
 
-; Windows terminal
+; "W"indows terminal
 CapsLock & w::Run wt.exe
+
+; j"I"ra
+CapsLock & i:: Run https://alphaproc.atlassian.net/jira/software/c/projects/VPID/boards/3?quickFilter=5
+
+; "B"itbucket
+CapsLock & b:: Run https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?state=OPEN&author=`%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed`%7D
 
 ;================================================================================================
 ;  Vim Mode.
