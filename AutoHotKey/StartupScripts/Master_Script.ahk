@@ -14,12 +14,12 @@ SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 ;================================================================================================
 #Include Private_Vars.ahk
 #Include General_Hotstrings.ahk ; Note: General_Hotstrings must be imported before any Return statements for the Hotstring definition to work properly.
-
 #Include CapsLock_Scripts.ahk
 #Include Chrome.ahk
 #Include Git_Bash.ahk
 #Include RubyMine.ahk
 #Include Slack.ahk
+#Include Foxhole.ahk
 
 ;================================================================================================
 ; One Off Scripts
@@ -27,3 +27,4 @@ SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 ^.::
 InputBox, input, Script Launcher, One-off script name:, no, 250, 100
 Run, % "..\OneOffScripts\" . input . ".ahk"
+
