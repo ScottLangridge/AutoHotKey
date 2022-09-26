@@ -57,6 +57,9 @@ CapsLock & i:: Run https://alphaproc.atlassian.net/jira/software/c/projects/VPID
 ; "B"itbucket
 CapsLock & b:: Run https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?state=OPEN&author=`%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed`%7D
 
+; "C"rucible
+CapsLock & c:: Run https://crucible.alphavpi.com/cru/?filter=custom&title=SL
+
 ;================================================================================================
 ;  Vim Mode.
 ;================================================================================================
