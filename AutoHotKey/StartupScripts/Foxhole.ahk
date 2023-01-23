@@ -15,7 +15,8 @@ Ctrl + Middle Click:%A_Tab%Middle Click and Hold (Auto-rotate cam)
 (Press the relavent mouse button again once to cancel all of the above)
 
 Ctrl + W : W and Hold (Auto-run)
-Ctrl + S : Shift and Hold (Use with Auto-assemble for stacks of three)
+Ctrl + S : S and Hold (Auto-reverse)
+Ctrl + Q : Shift and Hold (Use with Auto-assemble for stacks of three)
 
 Ctrl + A : Auto-reload and Fire Artillery (Spams 'r, click, r, click...')
 (Cancelled by repeating the sequence or pressing q to leave the artillery piece)
@@ -28,6 +29,7 @@ Requests for new bindings or tweaks of existing ones welcome. Just let me know o
 ; Kill All Shortcuts
 ^space:: 
   Send {w up}
+  Send {s up}
   Send {Shift up}
   Click Up Right
   Click Up Left
@@ -36,7 +38,7 @@ Requests for new bindings or tweaks of existing ones welcome. Just let me know o
   Clicking := false
 return
 
-^s:: Send {Shift down}
+^q:: Send {Shift down}
 
 ; Toggle Aim
 ^RButton:: Click Down Right
@@ -49,6 +51,9 @@ return
 
 ; Autorun
 ^w:: Send {w down}
+
+; Autorun Backwards
+^s:: Send {s down}
 
 ; Breaking stops autorun
 ~s::

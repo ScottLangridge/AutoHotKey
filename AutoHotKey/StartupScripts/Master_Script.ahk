@@ -14,6 +14,8 @@ SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 ;================================================================================================
 #Include Private_Vars.ahk
 #Include General_Hotstrings.ahk ; Note: General_Hotstrings must be imported before any Return statements for the Hotstring definition to work properly.
+#Include Temporary_Hotstrings.ahk
+
 #Include CapsLock_Scripts.ahk
 #Include Chrome.ahk
 #Include Git_Bash.ahk

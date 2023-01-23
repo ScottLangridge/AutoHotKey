@@ -13,3 +13,9 @@
 ; Full Docs:
 ; https://www.autohotkey.com/docs/Hotstrings.htm
 
+::eqn::MIN(FC301.OP, FC302.OP, DELAY(FC301.OP, 120), DELAY(FC301.OP, 180))
+^[::
+send `:w {return}
+sleep 100
+send `:so `% {return}
+return

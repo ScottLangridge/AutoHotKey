@@ -60,6 +60,21 @@ CapsLock & b:: Run https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?
 ; "C"rucible
 CapsLock & c:: Run https://crucible.alphavpi.com/cru/?filter=custom&title=SL&project=&author=&moderator=&creator=&reviewer=&complete=any&reviewType=any&orRoles=true&state=Draft&state=Approval&state=Review&state=Summarize&state=Unknown&state=Open+Snippet
 
+; "R"eview
+CapsLock & r::
+  InputBox, Vpid, Enter VPID,,,190,100 
+  If (ErrorLevel = 1) {
+    Return
+  }
+
+  Run chrome.exe "https://alphaproc.atlassian.net/browse/VPID-%Vpid%" " --new-window "
+  Run https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?state=OPEN&query=%Vpid%
+  Run https://bitbucket.org/de-rossi-consulting/vpi-soft-sensors/pull-requests/?state=OPEN&query=%Vpid%
+  Run https://bitbucket.org/de-rossi-consulting/ml-service/pull-requests/?state=OPEN&query=%Vpid%
+  Run https://crucible.alphavpi.com/cru/?filter=custom&title=%Vpid%&project=&author=&moderator=&creator=&reviewer=&complete=any&reviewType=any&orRoles=true&state=Approval&state=Review&state=Summarize&state=Unknown&state=Open+Snippet
+
+Return
+
 ;================================================================================================
 ;  Vim Mode.
 ;================================================================================================
