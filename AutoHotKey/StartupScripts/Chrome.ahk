@@ -9,6 +9,8 @@
 ::bbml::https://bitbucket.org/de-rossi-consulting/ml-service/pull-requests/?state=OPEN&author=%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed%7D
 ::confvpi::https://alphaproc.atlassian.net/wiki/spaces/DSN/overview
 ::confss::https://alphaproc.atlassian.net/wiki/spaces/VSSDKB/overview
+::figvpi::https://www.figma.com/file/wNOjsiEgjP3RE78iVLzmMT/VPI-Core%3A-Prototype?node-id=478-53193&t=GrL8bseR8rrHpkma-0
+::figss::https://www.figma.com/file/UFXughqZ7A5XLn2CP3SaJi/VPI-Soft-Sensors%3A-Prototype?node-id=5107-173332
 ::vpilocal::localhost:3000
 ::vpiexperimental::https://vpi-experimental.alphavpi.com/
 ::vpistable::https://vpi-stable.alphavpi.com/login
