@@ -48,6 +48,12 @@ CapsLock & [::Send {Home}
 CapsLock & Right::Send {End}
 CapsLock & ]::Send {End}
 
+; "O"bsidian
+CapsLock & o:: Run obsidian://open?vault=Scott`%27s`%20Vault&file=Task`%20Board
+
+; "D"rs Obsidian
+CapsLock & d:: Run obsidian://open?vault=DRS`%20Vault&file=Task`%20Board
+
 ; "W"indows terminal
 CapsLock & w::Run wt.exe
 
