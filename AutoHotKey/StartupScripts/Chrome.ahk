@@ -1,22 +1,42 @@
 ﻿; Only in Chrome
 #IfWinActive ahk_exe chrome.exe
 
-; URL Hotstrings
-::jiravpi::https://alphaproc.atlassian.net/jira/software/c/projects/VPID/boards/3?quickFilter=5
-::jirass::https://alphaproc.atlassian.net/jira/software/c/projects/VSSD/boards/5?quickFilter=7
-::jiradx::https://dev.azure.com/SHS-IT-DCE-CRM/WB%20DXCon/_sprints/taskboard/WB%20DXCon%20Team/WB%20DXCon/Sprint%201
-::bbvpi::https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?state=OPEN&author=%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed%7D
-::bbss::https://bitbucket.org/de-rossi-consulting/vpi-soft-sensors/pull-requests/?state=OPEN&author=%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed%7D
-::bbml::https://bitbucket.org/de-rossi-consulting/ml-service/pull-requests/?state=OPEN&author=%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed%7D
-::bbdx::https://code.siemens.com/CRM-GDC-Healthineers/dxcon/-/merge_requests
-::confvpi::https://alphaproc.atlassian.net/wiki/spaces/DSN/overview
-::confss::https://alphaproc.atlassian.net/wiki/spaces/VSSDKB/overview
-::figvpi::https://www.figma.com/file/wNOjsiEgjP3RE78iVLzmMT/VPI-Core%3A-Prototype?node-id=478-53193&t=GrL8bseR8rrHpkma-0
-::figss::https://www.figma.com/file/UFXughqZ7A5XLn2CP3SaJi/VPI-Soft-Sensors%3A-Prototype?node-id=5107-173332
+; URL Hotstrings - General
+::webmail::https://outlook.office.com/mail/inbox/
+
+; URL Hotstrings - VPI 
 ::vpilocal::localhost:3000
 ::vpiexperimental::https://vpi-experimental.alphavpi.com/
 ::vpistable::https://vpi-stable.alphavpi.com/login
-::webmail::https://outlook.office.com/mail/inbox/
+::jiravpi::https://alphaproc.atlassian.net/jira/software/c/projects/VPID/boards/3?quickFilter=5
+::jirass::https://alphaproc.atlassian.net/jira/software/c/projects/VSSD/boards/5?quickFilter=7
+::bbvpi::https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?state=OPEN&author=%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed%7D
+::bbss::https://bitbucket.org/de-rossi-consulting/vpi-soft-sensors/pull-requests/?state=OPEN&author=%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed%7D
+::bbml::https://bitbucket.org/de-rossi-consulting/ml-service/pull-requests/?state=OPEN&author=%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed%7D
+::figvpi::https://www.figma.com/file/wNOjsiEgjP3RE78iVLzmMT/VPI-Core%3A-Prototype?node-id=478-53193&t=GrL8bseR8rrHpkma-0
+::figss::https://www.figma.com/file/UFXughqZ7A5XLn2CP3SaJi/VPI-Soft-Sensors%3A-Prototype?node-id=5107-173332
+::confvpi::https://alphaproc.atlassian.net/wiki/spaces/DSN/overview
+::confss::https://alphaproc.atlassian.net/wiki/spaces/VSSDKB/overview
+
+; URL Hotstrings - Siemens
+::jiradx::https://dev.azure.com/SHS-IT-DCE-CRM/WB%20DXCon/_sprints/taskboard/WB%20DXCon%20Team/WB%20DXCon
+::bbdx::https://code.siemens.com/CRM-GDC-Healthineers/dxcon/-/merge_requests
+::bbwdx::https://code.siemens.com/CRM-GDC-Healthineers/wbdxcon/-/merge_requests
+::figdx::https://xd.adobe.com/view/ea75d8e5-bb68-444a-bca4-0d9c569837b8-bf26/grid
+::siejs::https://dxcon-uat3.hcvpc.io/dxqb/
+::siejsus::https://dxcon-uat3.hcvpc.io/dxqb/?quoteId=1422c00b-9640-4e6d-8e5d-a233b9da4a3f&country=US
+::siejsde::https://dxcon-uat3.hcvpc.io/dxqb/?quoteId=b40be0c3-c9b6-4140-a2eb-ec577c783991&country=DE
+::siejsnl::https://dxcon-uat3.hcvpc.io/dxqb/?quoteId=7d73b609-55f2-43bf-959b-8148df9925ec&country=NL
+::sieus::http://localhost:4205/?quoteId=1422c00b-9640-4e6d-8e5d-a233b9da4a3f&country=US
+::sieus2::http://localhost:4205/?quoteId=1cf3ab5c-ad94-4b43-957a-ce9106259ed8&country=US
+::sieus3::http://localhost:4205/?quoteId=687f274a-b279-4834-a5db-47bd7ccbc1cb&country=US
+;::siede::http://localhost:4205/?quoteId=b40be0c3-c9b6-4140-a2eb-ec577c783991&country=DE - This is the old siede before the switch to cqp3 
+::siede::http://localhost:4205/?quoteId=0416974c-7c04-46de-9929-ab7d895ebcb7&country=DE
+::sienl::http://localhost:4205/?quoteId=7d73b609-55f2-43bf-959b-8148df9925ec&country=NL
+::siecookie2::https://dxcon-uat3.hcvpc.io/restadmin/server/info/user
+::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
+::siequote2::https://cpq242-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
+::siequote3::https://cpq3-uat-nam.hcvpc.io/plugin/gui/index.html?tab=quotes
 
 ; Stop me from accidentally writing vpiss, which leads to some... interesting results
 ::vpiss::Try again
