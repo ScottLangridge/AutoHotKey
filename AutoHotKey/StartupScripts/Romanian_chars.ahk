@@ -1,0 +1,10 @@
+﻿:*?c:Acirc::Â
+:*?c:acirc::â
+:*?c:Abreve::Ă
+:*?c:abreve::ă
+:*?c:Icirc::Î
+:*?c:icirc::î
+:*?c:Scomma::Ș
+:*?c:scomma::ș
+:*?c:Tcomma::Ț
+:*?c:tcomma::ț 	 
