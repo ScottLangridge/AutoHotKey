@@ -37,6 +37,7 @@
 ::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
 ::siequote2::https://cpq242-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siequote3::https://cpq3-uat-nam.hcvpc.io/plugin/gui/index.html?tab=quotes
+::sietimesheet::https://forms.gle/vwg4cZodModpKfRQA
 
 ; Stop me from accidentally writing vpiss, which leads to some... interesting results
 ::vpiss::Try again
