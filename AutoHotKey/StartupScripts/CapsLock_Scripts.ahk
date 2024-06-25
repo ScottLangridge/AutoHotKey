@@ -57,33 +57,24 @@ CapsLock & d:: Run obsidian://open?vault=DRS`%20Vault&file=Task`%20Board
 ; "W"indows terminal
 CapsLock & w::Run wt.exe
 
-; j"I"ra
-CapsLock & i:: Run https://alphaproc.atlassian.net/jira/software/c/projects/VPID/boards/3?assignee=6167eb37d9820f00703c35c7
+; sprint "B"oard
+CapsLock & b:: Run https://dev.azure.com/SHS-IT-DCE-CRM/WB`%20DXCon/_sprints/taskboard/WB`%20DXCon`%20Team/WB`%20DXCon
 
-; "B"itbucket
-CapsLock & b:: Run https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?state=OPEN&author=`%7Bb67d958a-ef80-4314-89c2-6d95d5ff28ed`%7D
-
-; "C"rucible
-CapsLock & c:: Run https://crucible.alphavpi.com/cru/?filter=custom&title=SL&project=&author=&moderator=&creator=&reviewer=&complete=any&reviewType=any&orRoles=true&state=Draft&state=Approval&state=Review&state=Summarize&state=Unknown&state=Open+Snippet
-
-; "R"eview
-CapsLock & r::
-  InputBox, Vpid, Enter VPID,,,190,100 
+; ticket "I"D
+CapsLock & i::
+  InputBox, tid, Enter Azure ID,,,190,100 
   If (ErrorLevel = 1) {
     Return
   }
+  Run chrome.exe https://dev.azure.com/SHS-IT-DCE-CRM/WB`%20DXCon/_workitems/edit/%tid%
+  Return
+ 
 
-  Run chrome.exe "https://alphaproc.atlassian.net/browse/VPID-%Vpid%" " --new-window "
-  Sleep 100
-  Run https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?state=OPEN&query=%Vpid%
-  Sleep 100
-  Run https://bitbucket.org/de-rossi-consulting/vpi-soft-sensors/pull-requests/?state=OPEN&query=%Vpid%
-  Sleep 100
-  Run https://bitbucket.org/de-rossi-consulting/ml-service/pull-requests/?state=OPEN&query=%Vpid%
-  Sleep 100
-  Run https://crucible.alphavpi.com/cru/?filter=custom&title=%Vpid%&project=&author=&moderator=&creator=&reviewer=&complete=any&reviewType=any&orRoles=true&state=Approval&state=Review&state=Summarize&state=Unknown&state=Open+Snippet
+; pull "R"equests
+CapsLock & r:: 
+  Run https://code.siemens.com/CRM-GDC-Healthineers/dxcon/-/merge_requests
+  Run https://code.siemens.com/CRM-GDC-Healthineers/wbdxcon/-/merge_requests
 
-Return
 
 ;================================================================================================
 ;  Vim Mode.
@@ -180,3 +171,26 @@ z::
 Space::
 #If
 
+
+;================================================================================================
+;  Legacy
+;================================================================================================
+
+; "R"eview
+/* CapsLock & r:: */
+/*   InputBox, Vpid, Enter VPID,,,190,100 */ 
+/*   If (ErrorLevel = 1) { */
+/*     Return */
+/*   } */
+
+/*   Run chrome.exe "https://alphaproc.atlassian.net/browse/VPID-%Vpid%" " --new-window " */
+/*   Sleep 100 */
+/*   Run https://bitbucket.org/alphaprocesscontrol/vpi/pull-requests/?state=OPEN&query=%Vpid% */
+/*   Sleep 100 */
+/*   Run https://bitbucket.org/de-rossi-consulting/vpi-soft-sensors/pull-requests/?state=OPEN&query=%Vpid% */
+/*   Sleep 100 */
+/*   Run https://bitbucket.org/de-rossi-consulting/ml-service/pull-requests/?state=OPEN&query=%Vpid% */
+/*   Sleep 100 */
+/*   Run https://crucible.alphavpi.com/cru/?filter=custom&title=%Vpid%&project=&author=&moderator=&creator=&reviewer=&complete=any&reviewType=any&orRoles=true&state=Approval&state=Review&state=Summarize&state=Unknown&state=Open+Snippet */
+
+/* Return */
