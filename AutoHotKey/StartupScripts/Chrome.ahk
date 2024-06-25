@@ -33,11 +33,15 @@
 ;::siede::http://localhost:4205/?quoteId=b40be0c3-c9b6-4140-a2eb-ec577c783991&country=DE - This is the old siede before the switch to cqp3 
 ::siede::http://localhost:4205/?quoteId=0416974c-7c04-46de-9929-ab7d895ebcb7&country=DE
 ::sienl::http://localhost:4205/?quoteId=7d73b609-55f2-43bf-959b-8148df9925ec&country=NL
+::siesl::http://localhost:4205/?quoteId=f9894e58-29ff-45f2-90be-425b5e6ac8dc&country=US
+::siesl2::http://localhost:4205/?quoteId=26d8f920-6043-4e54-8609-5ed9d71236d7&country=US
 ::siecookie2::https://dxcon-uat3.hcvpc.io/restadmin/server/info/user
 ::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
-::siequote2::https://cpq242-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
+::siequote2::https://cpq243-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siequote3::https://cpq3-uat-nam.hcvpc.io/plugin/gui/index.html?tab=quotes
-::sietimesheet::https://forms.gle/vwg4cZodModpKfRQA
+::siets::https://forms.gle/vwg4cZodModpKfRQA
+::sietsr::https://docs.google.com/spreadsheets/u/2/d/13t_OGnJe3vYST1MJ47Q88F8eZUsCoi6PtG_pZnU6Tvo/edit?gid=554714101{#}gid=554714101
+::sieurltest::http://localhost:5000/wbdxcon/?quoteId=f9894e58-29ff-45f2-90be-425b5e6ac8dc&country=US
 
 ; Stop me from accidentally writing vpiss, which leads to some... interesting results
 ::vpiss::Try again
