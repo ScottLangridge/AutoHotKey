@@ -86,10 +86,10 @@ SetIcon(icon_path) {
 }
 
 ; Caps J to enter vim mode
-CapsLock & j::
-  VimMode := True
-  SetIcon("..\assets\normal.png")
-return
+;CapsLock & j::
+;  VimMode := True
+;  SetIcon("..\assets\normal.png")
+;return
 
 #If %VimMode%
 ; I to exit vim mode
