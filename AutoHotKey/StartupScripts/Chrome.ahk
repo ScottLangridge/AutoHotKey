@@ -31,9 +31,10 @@
 ::sieus2::http://localhost:4205/?quoteId=1cf3ab5c-ad94-4b43-957a-ce9106259ed8&country=US
 ::sieus3::http://localhost:4205/?quoteId=687f274a-b279-4834-a5db-47bd7ccbc1cb&country=US
 ;::siede::http://localhost:4205/?quoteId=b40be0c3-c9b6-4140-a2eb-ec577c783991&country=DE - This is the old siede before the switch to cqp3 
-::siede::http://localhost:4205/?quoteId=0416974c-7c04-46de-9929-ab7d895ebcb7&country=DE
+::siede::http://localhost:4205/?quoteId=9586be1b-58cd-49a4-a71e-d8a444124c22&country=DE
 ::sienl::http://localhost:4205/?quoteId=7d73b609-55f2-43bf-959b-8148df9925ec&country=NL
 ::siesl::http://localhost:4205/?quoteId=f9894e58-29ff-45f2-90be-425b5e6ac8dc&country=US
+::siesluat::https://dxcon-uat.hcvpc.io/wbdxcon/?quoteId=f9894e58-29ff-45f2-90be-425b5e6ac8dc&country=US
 ::siesl2::http://localhost:4205/?quoteId=26d8f920-6043-4e54-8609-5ed9d71236d7&country=US
 ::siecookie2::https://dxcon-uat3.hcvpc.io/restadmin/server/info/user
 ::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
