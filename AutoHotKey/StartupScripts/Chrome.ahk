@@ -4,6 +4,20 @@
 ; URL Hotstrings - General
 ::webmail::https://outlook.office.com/mail/inbox/
 
+; URL Hotstrings - Arr
+::arrjellyseerr::http://homeserver:5055/
+::arrjellyfin::http://homeserver:8096/
+::arrjelly::http://homeserver:8096/
+::arrqbittorrent::http://homeserver:8085/
+::arrradarr::http://homeserver:7878/
+::arrsonarr::http://homeserver:8989/
+::arrlidarr::http://homeserver:8686/
+::arrreadarr::http://homeserver:8787/
+::arrreadarraudio::http://homeserver:8788/
+::arrprowlarr::http://homeserver:9696/
+::arrbazarr::http://homeserver:6767/
+
+
 ; URL Hotstrings - VPI 
 ::vpilocal::localhost:3000
 ::vpiexperimental::https://vpi-experimental.alphavpi.com/
@@ -33,12 +47,13 @@
 ;::siede::http://localhost:4205/?quoteId=b40be0c3-c9b6-4140-a2eb-ec577c783991&country=DE - This is the old siede before the switch to cqp3 
 ::siede::http://localhost:4205/?quoteId=9586be1b-58cd-49a4-a71e-d8a444124c22&country=DE
 ::sienl::http://localhost:4205/?quoteId=7d73b609-55f2-43bf-959b-8148df9925ec&country=NL
-::siesl::http://localhost:4205/?quoteId=f9894e58-29ff-45f2-90be-425b5e6ac8dc&country=US
-::siesluat::https://dxcon-uat.hcvpc.io/wbdxcon/?quoteId=f9894e58-29ff-45f2-90be-425b5e6ac8dc&country=US
+::siesl::http://localhost:4205/?quoteId=204a021d-9b4d-4274-901d-64afeeb380a2&country=US
+::sievn::http://localhost:4205/?quoteId=ae70b1e8-b577-4b18-8269-6948f043925b&country=VN
+::siesluat::https://dxcon-uat.hcvpc.io/wbdxcon/?quoteId=204a021d-9b4d-4274-901d-64afeeb380a2&country=US
 ::siesl2::http://localhost:4205/?quoteId=26d8f920-6043-4e54-8609-5ed9d71236d7&country=US
 ::siecookie2::https://dxcon-uat3.hcvpc.io/restadmin/server/info/user
 ::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
-::siequote2::https://cpq243-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
+::siequote2::https://cpq251-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siequote3::https://cpq3-uat-nam.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siets::https://forms.gle/vwg4cZodModpKfRQA
 ::sietsr::https://docs.google.com/spreadsheets/u/2/d/13t_OGnJe3vYST1MJ47Q88F8eZUsCoi6PtG_pZnU6Tvo/edit?gid=554714101{#}gid=554714101
