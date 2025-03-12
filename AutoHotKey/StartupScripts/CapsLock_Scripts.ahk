@@ -58,7 +58,7 @@ CapsLock & d:: Run obsidian://open?vault=DRS`%20Vault&file=Task`%20Board
 CapsLock & w::Run wt.exe
 
 ; sprint "B"oard
-CapsLock & b:: Run https://dev.azure.com/SHS-IT-DCE-CRM/WB`%20DXCon/_sprints/taskboard/WB`%20DXCon`%20Team/WB`%20DXCon
+CapsLock & b:: Run https://dev.azure.com/SHS-IT-DCE-CRM/WB`%20DXCon/_queries/query/79b32629-47c3-4e25-9ee3-6fb85b6152d7/
 
 ; ticket "I"D
 CapsLock & i::
