@@ -17,7 +17,6 @@
 ::arrprowlarr::http://homeserver:9696/
 ::arrbazarr::http://homeserver:6767/
 
-
 ; URL Hotstrings - VPI 
 ::vpilocal::localhost:3000
 ::vpiexperimental::https://vpi-experimental.alphavpi.com/
