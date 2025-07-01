@@ -49,10 +49,13 @@
 ::siesl::http://localhost:4205/?quoteId=204a021d-9b4d-4274-901d-64afeeb380a2&country=US
 ::sievn::http://localhost:4205/?quoteId=ae70b1e8-b577-4b18-8269-6948f043925b&country=VN
 ::siesluat::https://dxcon-uat.hcvpc.io/wbdxcon/?quoteId=204a021d-9b4d-4274-901d-64afeeb380a2&country=US
-::siesl2::http://localhost:4205/?quoteId=26d8f920-6043-4e54-8609-5ed9d71236d7&country=US
+::siede::https://dxcon-uat.hcvpc.io/?quoteId=9586be1b-58cd-49a4-a71e-d8a444124c22&country=DE
+::siedeuat::https://dxcon-uat.hcvpc.io/wbdxcon/?quoteId=9586be1b-58cd-49a4-a71e-d8a444124c22&country=DE
+::siesl2::http://localhost:4205/?quoteId=82242f0b-42e8-499d-9427-f9b65dec6ef1&country=US
+::sieod::http://localhost:4205/?quoteId=bd74b3e0-e368-4bab-b728-97a72ff2f536&country=US
 ::siecookie2::https://dxcon-uat3.hcvpc.io/restadmin/server/info/user
 ::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
-::siequote2::https://cpq251-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
+::siequote2::https://cpq253-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siequote3::https://cpq3-uat-nam.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siets::https://forms.gle/vwg4cZodModpKfRQA
 ::sietsr::https://docs.google.com/spreadsheets/u/2/d/13t_OGnJe3vYST1MJ47Q88F8eZUsCoi6PtG_pZnU6Tvo/edit?gid=554714101{#}gid=554714101

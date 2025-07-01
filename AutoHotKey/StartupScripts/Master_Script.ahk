@@ -23,6 +23,7 @@ SetWorkingDir %working_dir%  ; Ensures a consistent starting directory.
 #Include Slack.ahk
 #Include Foxhole.ahk
 #Include Romanian_chars.ahk
+#Include FancyPunctuation.ahk
 
 ;================================================================================================
 ; One Off Scripts
