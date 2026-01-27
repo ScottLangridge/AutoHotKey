@@ -13,6 +13,23 @@ return
 
 
 ;================================================================================================
+; Helper function for multi-stage hotkeys
+;================================================================================================
+WaitForSecondKey(timeout := 2) {
+  Input, SecondKey, L1 T%timeout%
+
+  ; Return empty string if timeout or escape
+  If (ErrorLevel = 2 || ErrorLevel = 1) {
+    Return ""
+  }
+
+  ; Return lowercase version of captured key
+  StringLower, SecondKey, SecondKey
+  Return SecondKey
+}
+
+
+;================================================================================================
 ; Hot keys with CapsLock modifier.  See https://autohotkey.com/docs/Hotkeys.htm#combo
 ;================================================================================================
 ; Switch open windows between "M"onitors.
@@ -58,7 +75,21 @@ CapsLock & d:: Run obsidian://open?vault=DRS`%20Vault&file=Task`%20Board
 CapsLock & w::Run wt.exe
 
 ; sprint "B"oard
-CapsLock & b:: Run https://dev.azure.com/SHS-IT-DCE-CRM/WB`%20DXCon/_queries/query/79b32629-47c3-4e25-9ee3-6fb85b6152d7/
+;   - B-"D" -> Board - "D"RS
+;   - B-"S" -> Board - "S"iemens
+;   - B-"M" -> Board - "M"entor
+CapsLock & b::
+  key := WaitForSecondKey()
+  If (key = "d") {
+    Run https://trello.com/b/M6jr9zuI/drs-bd-tasks
+  }
+  Else If (key = "s") {
+    Run https://dev.azure.com/SHS-IT-DCE-CRM/WB`%20DXCon/_queries/query/79b32629-47c3-4e25-9ee3-6fb85b6152d7/
+  }
+  Else If (key = "m") {
+    Run https://linear.app/performa-fitness/my-issues/assigned
+  }
+  Return
 
 ; ticket "I"D
 CapsLock & i::
@@ -71,14 +102,18 @@ CapsLock & i::
  
 
 ; pull "R"equests
-CapsLock & r:: 
-  Run https://code.siemens.com/CRM-GDC-Healthineers/dxcon/-/merge_requests
-  Run https://code.siemens.com/CRM-GDC-Healthineers/wbdxcon/-/merge_requests
+;   - R-"S" -> Requests - "S"iemens
+;   - R-"M" -> Requests - "M"entor
+CapsLock & r::
+  key := WaitForSecondKey()
+  If (key = "s") {
+    Run https://code.siemens.com/CRM-GDC-Healthineers/dxcon/-/merge_requests
+    Run https://code.siemens.com/CRM-GDC-Healthineers/wbdxcon/-/merge_requests
+  }
+  Else If (key = "m") {
+    Run https://github.com/De-Rossi-Consulting/fit-lab/pulls
+  }
   Return
-
-; "L"inear
-CapsLock & l:: Run https://linear.app/performa-fitness/my-issues/assigned
-
 
 ;================================================================================================
 ;  Vim Mode.
