@@ -52,14 +52,20 @@
 ::siede::https://dxcon-uat.hcvpc.io/?quoteId=9586be1b-58cd-49a4-a71e-d8a444124c22&country=DE
 ::siedeuat::https://dxcon-uat.hcvpc.io/wbdxcon/?quoteId=9586be1b-58cd-49a4-a71e-d8a444124c22&country=DE
 ::siesl2::http://localhost:4205/?quoteId=82242f0b-42e8-499d-9427-f9b65dec6ef1&country=US
-::sieod::http://localhost:4205/?quoteId=bd74b3e0-e368-4bab-b728-97a72ff2f536&country=US
+::sieod2::http://localhost:4205/?quoteId=bd74b3e0-e368-4bab-b728-97a72ff2f536&country=US
+::sieod::http://localhost:4205/?quoteId=96f4480d-183f-40c8-a595-befd572036a5&country=ES
 ::siecookie2::https://dxcon-uat3.hcvpc.io/restadmin/server/info/user
 ::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
-::siequote2::https://cpq253-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
+::siequote2::https://cpq261-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siequote3::https://cpq3-uat-nam.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siets::https://forms.gle/vwg4cZodModpKfRQA
 ::sietsr::https://docs.google.com/spreadsheets/u/2/d/13t_OGnJe3vYST1MJ47Q88F8eZUsCoi6PtG_pZnU6Tvo/edit?gid=554714101{#}gid=554714101
 ::sieurltest::http://localhost:5000/wbdxcon/?quoteId=f9894e58-29ff-45f2-90be-425b5e6ac8dc&country=US
+
+; Azure at tags
+::@amrutha::@<Kamath B, Amrutha>
+::@irena::@<Saykova, Irena (ext)>
+::@syed::@<Shah, Syed>
 
 ; Stop me from accidentally writing vpiss, which leads to some... interesting results
 ::vpiss::Try again

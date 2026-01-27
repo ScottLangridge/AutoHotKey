@@ -74,6 +74,10 @@ CapsLock & i::
 CapsLock & r:: 
   Run https://code.siemens.com/CRM-GDC-Healthineers/dxcon/-/merge_requests
   Run https://code.siemens.com/CRM-GDC-Healthineers/wbdxcon/-/merge_requests
+  Return
+
+; "L"inear
+CapsLock & l:: Run https://linear.app/performa-fitness/my-issues/assigned
 
 
 ;================================================================================================
