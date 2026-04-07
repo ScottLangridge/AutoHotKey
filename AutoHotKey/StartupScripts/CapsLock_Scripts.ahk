@@ -33,23 +33,23 @@ WaitForSecondKey(timeout := 2) {
 ; Hot keys with CapsLock modifier.  See https://autohotkey.com/docs/Hotkeys.htm#combo
 ;================================================================================================
 ; Switch open windows between "M"onitors.
-CapsLock & m::
-while (GetKeyState("CapsLock"))
-	sleep, -1
-WinGet,Windows,List
-i = %Windows%
-while (i > 0)
-{
-    i--
-    this_id := Windows%i%
-    WinGet, WinState, MinMax, ahk_id %this_id%
-    if (WinState > -1)
-    {
-        WinActivate, ahk_id %this_id%
-        Send #+{Right}
-    }
-}
-Return
+;CapsLock & m::
+;while (GetKeyState("CapsLock"))
+;	sleep, -1
+;WinGet,Windows,List
+;i = %Windows%
+;while (i > 0)
+;{
+;    i--
+;    this_id := Windows%i%
+;    WinGet, WinState, MinMax, ahk_id %this_id%
+;    if (WinState > -1)
+;    {
+;        WinActivate, ahk_id %this_id%
+;        Send #+{Right}
+;    }
+;}
+;Return
 
 ; Run "T"inyTask.
 CapsLock & t::Run ..\..\Utilities\TinyTask\TinyTaskPortable\TinyTaskPortable.exe
@@ -66,10 +66,17 @@ CapsLock & Right::Send {End}
 CapsLock & ]::Send {End}
 
 ; "O"bsidian
-CapsLock & o:: Run obsidian://open?vault=Scott`%27s`%20Vault&file=Task`%20Board
-
-; "D"rs Obsidian
-CapsLock & d:: Run obsidian://open?vault=DRS`%20Vault&file=Task`%20Board
+;   - O-"S" -> Obsidian - "S"cott's Vault
+;   - O-"D" -> Obsidian - "D"RS Vault
+CapsLock & o::
+  key := WaitForSecondKey()
+  If (key = "s") {
+    Run obsidian://open?vault=Scott`%27s`%20Vault&file=Task`%20Board
+  }
+  Else If (key = "d") {
+    Run obsidian://open?vault=DRS`%20Vault&file=Task`%20Board
+  }
+  Return
 
 ; "W"indows terminal
 CapsLock & w::Run wt.exe
