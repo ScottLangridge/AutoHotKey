@@ -17,7 +17,7 @@
 ::arrprowlarr::http://homeserver:9696/
 ::arrbazarr::http://homeserver:6767/
 
-; URL Hotstrings - VPI 
+; URL Hotstrings - VPI
 ::vpilocal::localhost:3000
 ::vpiexperimental::https://vpi-experimental.alphavpi.com/
 ::vpistable::https://vpi-stable.alphavpi.com/login
@@ -43,7 +43,7 @@
 ::sieus::http://localhost:4205/?quoteId=1422c00b-9640-4e6d-8e5d-a233b9da4a3f&country=US
 ::sieus2::http://localhost:4205/?quoteId=1cf3ab5c-ad94-4b43-957a-ce9106259ed8&country=US
 ::sieus3::http://localhost:4205/?quoteId=687f274a-b279-4834-a5db-47bd7ccbc1cb&country=US
-;::siede::http://localhost:4205/?quoteId=b40be0c3-c9b6-4140-a2eb-ec577c783991&country=DE - This is the old siede before the switch to cqp3 
+;::siede::http://localhost:4205/?quoteId=b40be0c3-c9b6-4140-a2eb-ec577c783991&country=DE - This is the old siede before the switch to cqp3
 ::siede::http://localhost:4205/?quoteId=9586be1b-58cd-49a4-a71e-d8a444124c22&country=DE
 ::sienl::http://localhost:4205/?quoteId=7d73b609-55f2-43bf-959b-8148df9925ec&country=NL
 ::siesl::http://localhost:4205/?quoteId=204a021d-9b4d-4274-901d-64afeeb380a2&country=US
@@ -56,6 +56,7 @@
 ::sieod::http://localhost:4205/?quoteId=96f4480d-183f-40c8-a595-befd572036a5&country=ES
 ::siecookie2::https://dxcon-uat3.hcvpc.io/restadmin/server/info/user
 ::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
+::siecookiesandbox::https://sandbox-crm.hcvpc.io/restadmin/server/info/user
 ::siequote2::https://cpq262-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siequote3::https://cpq3-uat-nam.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siets::https://forms.gle/vwg4cZodModpKfRQA
