@@ -65,6 +65,25 @@ CapsLock & [::Send {Home}
 CapsLock & Right::Send {End}
 CapsLock & ]::Send {End}
 
+; "Z"ed
+;   - Z-"S"-"D" -> Zed - "S"iemens - "D"XCon
+;   - Z-"S"-"W" -> Zed - "S"iemens - "W"BDXCon
+; Based on the obsidian block below, create bindings for Zed.
+; DXCON is a cmd command: 'wsl.exe -e "zed /home/scott/siemens/repos/dxcon/iDXconf/iDXconf"'
+; WBDXCON is the same but /home/scott/siemens/repos/wbdxcon/dxqb
+CapsLock & z::
+  key := WaitForSecondKey()
+  If (key = "s") {
+    key := WaitForSecondKey()
+    If (key = "d") {
+      Run wsl.exe -e bash -c "zed /home/scott/siemens/repos/dxcon/iDXconf/iDXconf"
+    }
+    Else If (key = "w") {
+      Run wsl.exe -e bash -c "zed /home/scott/siemens/repos/wbdxcon/dxqb"
+    }
+  }
+  Return
+
 ; "O"bsidian
 ;   - O-"S" -> Obsidian - "S"cott's Vault
 ;   - O-"D" -> Obsidian - "D"RS Vault
