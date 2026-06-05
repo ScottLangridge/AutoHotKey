@@ -57,7 +57,7 @@
 ::siecookie2::https://dxcon-uat3.hcvpc.io/restadmin/server/info/user
 ::siecookie3::https://dxcon-uat.hcvpc.io/restadmin/server/info/user
 ::siecookiesandbox::https://sandbox-crm.hcvpc.io/restadmin/server/info/user
-::siequote2::https://cpq262-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
+::siequote2::https://cpq263-uat.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siequote3::https://cpq3-uat-nam.hcvpc.io/plugin/gui/index.html?tab=quotes
 ::siets::https://forms.gle/vwg4cZodModpKfRQA
 ::sietsr::https://docs.google.com/spreadsheets/u/2/d/13t_OGnJe3vYST1MJ47Q88F8eZUsCoi6PtG_pZnU6Tvo/edit?gid=554714101{#}gid=554714101

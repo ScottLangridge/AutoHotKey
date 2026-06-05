@@ -114,8 +114,8 @@ CapsLock & i::
 CapsLock & r::
   key := WaitForSecondKey()
   If (key = "s") {
-    Run https://code.siemens.com/CRM-GDC-Healthineers/dxcon/-/merge_requests
-    Run https://code.siemens.com/CRM-GDC-Healthineers/wbdxcon/-/merge_requests
+    Run https://dev.azure.com/SHS-IT-DCE-CRM/_git/DXCON/pullrequests?_a=mine
+    Run https://dev.azure.com/SHS-IT-DCE-CRM/_git/WB`%20DXCon/pullrequests?_a=mine
   }
   Else If (key = "m") {
     Run https://github.com/De-Rossi-Consulting/fit-lab/pulls
